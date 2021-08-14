@@ -1,0 +1,44 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        Username: <input type="text" id="username"><span id="msg"></span><br><br>
+        Password: <input type="password" id="pass"><span id="msg1"></span><br><br>
+        <button onclick="validate()"><a href="login.html">submit</a></button>
+        <h1 id="id"></h1>
+        <script>
+            function validate(){
+                
+                var username=document.getElementById("username").value;
+                var password=document.getElementById("pass").value;
+                var uname=document.getElementById("msg");
+                var pass=document.getElementById("msg1");
+                var msg=document.getElementById("id");
+               if(username.length>=4 ){
+                   uname.innerHTML="";
+                   
+               }
+               else{
+                   uname.innerHTML="usermame cannot be less than 4 characters";
+                   
+               }
+               if(password.length>=4 ){
+                   pass.innerHTML="";
+                   
+               }
+               else{
+                   pass.innerHTML="password cannot be less than 4 characters";
+               }
+                   
+
+
+
+            }
+s
+
+
+
+        </script>
+        </body>
+</html>
